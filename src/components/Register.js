@@ -1,7 +1,7 @@
 // Register.js
 
 import React, { useState } from 'react';
-import './Registration.css'; // Import the CSS file
+import './Register.css'; // Import the CSS file
 
 function Register({ setRegister }) {
     const [newuser, setNewUser] = useState({
