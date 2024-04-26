@@ -2,11 +2,13 @@ import React, { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
 import EmployeeContext from "./MyContext/EmployeeContext";
 import "./Login.css"; 
+import Register from "./components/Register";
 
 function Login() {
   const [emp_name, setEmpName] = useState('');
   const [password, setPassword] = useState('');
   const [loginFailed, setLoginFailed] = useState(false); 
+  const [register, setRegister]=useState(false);
   const history = useHistory();
   const { setEmployeeData } = useContext(EmployeeContext);
 
@@ -59,6 +61,11 @@ function Login() {
             <button>Login</button>
           </div>
         </form>
+        <br/>
+        <button className="Register" onClick={()=>setRegister(true)}>Register</button>
+        {register&&
+          <Register setRegister={setRegister}></Register>
+        }
       </div>
       {loginFailed && (
         <div className="popup">
