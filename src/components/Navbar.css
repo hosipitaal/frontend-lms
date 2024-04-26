@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+#navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navigation li {
+    margin-right: 10px;
+}
+
+#navigation li:last-child {
+    margin-right: 40px;
+}
+
+#navigation li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navigation li a:hover {
+    color: #ffd700; /* Change color on hover */
+}

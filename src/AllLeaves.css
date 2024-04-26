@@ -1,0 +1,58 @@
+.container {
+    margin-top: 20px;
+}
+
+#search_bar {
+    margin-bottom: 20px;
+}
+
+#leaves {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#leaves th,
+#leaves td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#leaves th {
+    background-color: #f2f2f2;
+}
+
+#leaves tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#leaves tr:hover {
+    background-color: #ddd;
+}
+
+.delete-btn,
+.edit-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.edit-btn {
+    background-color: #007bff;
+}
+
+.delete-btn:hover,
+.edit-btn:hover {
+    opacity: 0.8;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
